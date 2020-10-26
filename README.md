@@ -1,8 +1,6 @@
-Test project for inditex, create with [Create React App](https://github.com/facebook/create-react-app).
+Test project for list products, create with [Create React App](https://github.com/facebook/create-react-app).
 
 Made by: Erick González.
-
-Plexus tech.
 
 ## Available Scripts
 
