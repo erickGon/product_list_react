@@ -1,0 +1,46 @@
+@import "../../styles/colors.scss";
+
+.card-container {
+  cursor: pointer;
+  height: 18rem;
+  width: 18rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.2em;
+  padding: 1rem;
+  box-shadow: 1px 1px 3px 1px $background-header-color;
+
+  .card-container_image {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 14rem;
+  }
+
+  .card-container_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: justify;
+
+    h3 {
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .card-container {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 370px) {
+  .card-container {
+    width: 100%;
+  }
+}

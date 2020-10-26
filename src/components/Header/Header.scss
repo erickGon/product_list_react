@@ -1,0 +1,21 @@
+@import '../../styles/colors.scss';
+
+.main-header {
+  background-color: $background-header-color;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 5rem;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+
+  .main-header_container {
+    cursor: pointer;
+    background-color: transparent;
+
+    .main-header_container_logo {
+      height: 5rem;
+    }
+  }
+}

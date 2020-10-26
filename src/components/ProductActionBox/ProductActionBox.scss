@@ -1,0 +1,31 @@
+@import ".././../styles/colors.scss";
+
+.actions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  .actions-container_button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: $secondary-color;
+    color: $terciary-color;
+    font-weight: 600;
+    transition: all 0.5s;
+
+    &:active {
+      color: $secondary-color;
+      background-color: $terciary-color;
+    }
+  }
+
+  .actions-container_message-error {
+    color: $primary-color;
+  }
+
+  .actions-container_message-succes {
+    color: $highlighted-title-blue-color;
+  }
+}

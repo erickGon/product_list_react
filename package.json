@@ -1,0 +1,55 @@
+{
+  "name": "test-react-inditex",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "dexie": "^3.0.2",
+    "node-sass": "^4.14.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-redux": "^7.2.1",
+    "react-scripts": "3.4.3",
+    "redux": "^4.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "lint": "prettier --check ./src/**/**.{js,jsx}",
+    "reformat:lint": "prettier --write ./src/**/**.{js,jsx}",
+    "stylelint": "stylelint ./src/**/**.scss",
+    "reformat:stylelint": "stylelint --fix ./src/**/**.scss",
+    "reformat:all": "npm run reformat:lint && npm run reformat:stylelint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run stylelint",
+      "pre-push": "npm run test"
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "prettier": "2.1.2",
+    "redux-mock-store": "^1.5.4",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}

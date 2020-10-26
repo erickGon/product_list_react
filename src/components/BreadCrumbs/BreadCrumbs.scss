@@ -1,0 +1,16 @@
+.breadcrumbs-container {
+  display: flex;
+  flex-direction: row;
+
+  .breadcrumbs-container_list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 600px) {
+  .breadcrumbs-container {
+    display: none;
+  }
+}
